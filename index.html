@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Website</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <h1 class="page-header text-center ">Quiz-Javascript</h1>
+
+  <div id="mainContainer">
+    <div id="start" >
+      <h1>Are you ready ?</h1>
+      <button onclick="startQuiz()" class="btn btn-primary">start quiz</button>
+    </div>
+
+    <div class="container text-center bg-info " id="quizContainer">
+      <h4 class="text-end" id="scoreboard"> Score &nbsp;</h4>
+      <section id="questionSection">
+        <h3 id="question"></h3>
+
+      </section>
+     
+      <div class="d-grid gap-2  col-6 mx-auto">
+        <button type="button" class="btn btn-light btn-outline-dark" id="btn1" onClick="reply_click(this.id)"></button>
+        <button type="button" class="btn btn-light btn-outline-dark" id="btn2" onClick="reply_click(this.id)"></button>
+
+        <button type="button" class="btn btn-light btn-outline-dark" id="btn3" onClick="reply_click(this.id)"></button>
+        <button type="button" class="btn btn-light btn-outline-dark" id="btn4" onClick="reply_click(this.id)"></button>
+      </div>
+
+
+      <section id="Description"></section>
+      <div class="text-end">
+
+        <button type="button" class="btn btn-light btn-outline-dark  " id="next">Next</button>
+      </div>
+
+    </div>
+    <div id="end" >
+      <h1>Thanks for attempting quiz</h1>
+      <h2 id="scoreCard"></h2>
+      <button onclick="location.reload();" class="btn btn-primary">start quiz again</button>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="index.js">
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+*{
+    padding:0;
+    margin:0;
+}
+#ContentContainer{
+    padding:2rem;
+    height: 20cm;
+}
+#mainContainer{
+    position: relative;
+}
+#start{
+    padding:2rem;
+    height: 20cm;
+    width: 100%;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+   
+}
+#end{
+  
+    position: absolute;
+    width: 60rem;
+    height:20rem;
+   
+    top: 15%;
+    left: 20%;
+    z-index: -1;
+    text-align: center;
+    
+   
+}
+#next{
+    margin: 2rem;
+}
+#questionSection{
+    height:2cm;
+}
+#Description{
+
+    height:1cm;
+    margin:2rem;
+    font-size: 1.5rem;
+}
+.page-header{
+    background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
+    padding:2%
+}
+body {
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+}
